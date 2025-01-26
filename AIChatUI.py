@@ -55,7 +55,7 @@ class Ui_mainWindow(object):
         except:
             with open('model.txt', 'a', encoding='utf-8') as f:
                 pass
-            self.AIRecive.setText("请在model文件夹中添加已经拥有的模型名字")
+            self.AIRecive.setText("请在model文件中添加已经拥有的模型名字")
         self.Input.setPlaceholderText(_translate("mainWindow", "从这里开始聊天："))
         self.Submit.setText(_translate("mainWindow", "发送"))
         self.APIURL.setPlaceholderText(_translate("mainWindow", "API:http://127.0.0.1:11434/api/chat"))
