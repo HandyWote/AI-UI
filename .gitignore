@@ -1,0 +1,8 @@
+.idea
+.venv
+__pycache__
+build
+dist
+设想.txt
+model.txt
+AIChatUI.spec

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QWidget" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AIChatUI</string>
+  </property>
+  <widget class="QComboBox" name="ModelBox">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>10</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>模型</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTextEdit" name="Input">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>551</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>从这里开始聊天：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Submit">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>330</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="APIURL">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>API</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="AIRecive">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>601</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>AI回复：</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
