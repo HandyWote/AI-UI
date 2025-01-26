@@ -1,0 +1,4 @@
+基于PyQt写的一个可以调用OllamaApi的UI。
+因为在网上找了一圈，如maxkb等等WebUI都需要安装Docker才能安装有点麻烦，所以自己写了一个可以在windows环境下运行的UI。
+RAG功能敬请期待！
+视频教程：
