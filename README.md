@@ -1,4 +1,61 @@
-基于PyQt写的一个可以调用OllamaApi的UI。
-因为在网上找了一圈，如maxkb等等WebUI都需要安装Docker才能安装有点麻烦，所以自己写了一个可以在windows环境下运行的UI。
-RAG功能敬请期待！
-视频教程：https://www.bilibili.com/video/BV1dPFKeeEFn/?vd_source=79c7cb404b974fdb363da0b65bd1215f
+# OllamaAPI 聊天界面
+
+## 项目介绍
+这是一个基于PyQt5开发的Ollama API调用界面，为用户提供了一个简单易用的本地聊天窗口，可以方便地与Ollama模型进行对话交互。
+
+### 技术原理
+- **界面实现**：使用PyQt5构建图形界面，包含模型选择、API地址配置、对话输入输出等功能区域
+- **API调用**：通过HTTP请求与Ollama API进行通信，支持自定义API地址
+- **模型管理**：从本地model.txt文件读取可用模型列表，支持动态添加新模型
+- **对话记录**：自动将对话内容保存到log.txt文件中，包含时间戳和完整对话内容
+
+## 使用指南
+
+### 环境要求
+- Python 3.x
+- PyQt5
+- requests
+
+### 安装步骤
+1. 克隆或下载本项目代码
+2. 安装依赖包：
+   ```
+   pip install PyQt5 requests
+   ```
+3. 确保已安装并启动Ollama服务
+
+### 运行方法
+1. 创建model.txt文件，添加已下载的Ollama模型名称（每行一个）
+2. 运行程序：
+   ```
+   python AIChatUI.py
+   ```
+
+### 使用说明
+1. 在顶部API地址栏输入Ollama服务地址（默认为http://127.0.0.1:11434/api/chat）
+2. 从下拉框选择要使用的模型
+3. 在底部输入框输入问题，点击发送按钮或按回车键发送
+4. AI回复将显示在中间的对话框中
+
+## 使用建议
+1. **模型配置**：
+   - 使用前请确保已通过Ollama下载所需模型
+   - 在model.txt中只添加已实际下载的模型名称
+
+2. **性能优化**：
+   - 建议使用本地运行的Ollama服务，可获得最佳响应速度
+   - 如遇到响应较慢，可检查网络连接和模型加载状态
+
+3. **使用技巧**：
+   - 保持API地址的正确性，确保能够连接到Ollama服务
+   - 定期检查log.txt了解历史对话记录
+   - 如遇到错误提示，请检查Ollama服务是否正常运行
+
+## 开发计划
+- RAG（检索增强生成）功能开发中
+- 支持更多的API参数配置
+- 优化对话界面交互体验
+
+## 相关资源
+- 视频教程：[B站教程链接](https://www.bilibili.com/video/BV1dPFKeeEFn/)
+- Ollama官方文档：[Ollama Documentation](https://ollama.ai/)
